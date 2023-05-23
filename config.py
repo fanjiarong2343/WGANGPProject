@@ -1,18 +1,18 @@
 FLAG = 'LWCO'
 # 'LWOC' 'LWCO' 'LWCA'
-PROGRAM = 'strip'
-EXECUTE_DICT = {'exiv2': 'exiv2', 'djpeg': 'djpeg', 'jhead': 'jhead', 'readelf': 'readelf', 'libxml': 'xmllint', 'pngfix': 'pngfix', 'pngtest': 'pngtest', 'pngcp': 'pngcp', 'objdump': 'objdump', 'strip': 'strip'}
-PARAMETER_DICT = {'exiv2': '@@', 'djpeg': '@@', 'jhead': '-v @@', 'readelf': '-a @@', 'libxml': '@@', 'pngfix': '@@', 'pngtest': '@@', 'pngcp': '@@ /dev/null', 'objdump': '-D @@', 'strip': '@@ -o /dev/null'}
+PROGRAM = 'size'
+EXECUTE_DICT = {'exiv2': 'exiv2', 'djpeg': 'djpeg', 'jhead': 'jhead', 'readelf': 'readelf', 'libxml': 'xmllint', 'pngfix': 'pngfix', 'pngtest': 'pngtest', 'pngcp': 'pngcp', 'objdump': 'objdump', 'strip': 'strip', 'size': 'size'}
+PARAMETER_DICT = {'exiv2': '@@', 'djpeg': '@@', 'jhead': '-v @@', 'readelf': '-a @@', 'libxml': '@@', 'pngfix': '@@', 'pngtest': '@@', 'pngcp': '@@ /dev/null', 'objdump': '-D @@', 'strip': '@@ -o /dev/null', 'size': '-A @@'}
 EXECUTE = EXECUTE_DICT[PROGRAM]
 PARAMETER = PARAMETER_DICT[PROGRAM]
 PRECISION = '2'
 
 MAX_COUNT = 7
-C_DIM = 1917
+C_DIM = 760
 
 
 # MAX_EPOCH = 100 / 50
-MAX_EPOCH = 100
+MAX_EPOCH = 80
 
 # LWOC
 STAGEI_G_LR = 1e-4
